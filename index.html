@@ -130,6 +130,21 @@ footer{background:#0F2B0F;color:#BFD9BF;text-align:center;padding:2.2rem 1.4rem;
 footer .aviso{max-width:680px;margin:0 auto .9rem;color:#9FC49F}
 footer a{color:#fff;text-decoration:underline}
 </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '892891176809318');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -142,7 +157,7 @@ footer a{color:#fff;text-decoration:underline}
       <a href="#online">Atención Online</a>
       <a href="#complementarias">Servicios</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn-wa" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn-wa" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener" onclick="fbq('track','Contact');">WhatsApp</a>
     </nav>
   </div>
 </header>
@@ -155,7 +170,7 @@ footer a{color:#fff;text-decoration:underline}
     <h1>BioBalance</h1>
     <p class="tagline">Tu cuerpo sabe cómo equilibrarse, nosotros te acompañamos</p>
     <div class="hero-cta">
-      <a class="btn-turno" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener">Agendar Consulta</a>
+      <a class="btn-turno" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener" onclick="fbq('track','Contact');">Agendar Consulta</a>
       <a class="btn-linea" href="#terapias">Conocer las Terapias</a>
     </div>
   </div>
@@ -180,7 +195,7 @@ footer a{color:#fff;text-decoration:underline}
         <h3>Biomagnetismo</h3>
         <p>Aplicación de imanes en puntos específicos del cuerpo para acompañar el equilibrio natural del organismo. Una técnica complementaria, no invasiva y personalizada, que se suma a tu bienestar sin reemplazar ningún tratamiento médico.</p>
         <p>¿No estás en Santa Rosa? También lo hacemos a distancia: coordinamos todo por WhatsApp.</p>
-        <a class="btn-turno" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20consultar%20por%20Biomagnetismo" target="_blank" rel="noopener">Consultar por Biomagnetismo</a>
+        <a class="btn-turno" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20consultar%20por%20Biomagnetismo" target="_blank" rel="noopener" onclick="fbq('track','Contact');">Consultar por Biomagnetismo</a>
       </div>
     </div>
 
@@ -191,7 +206,7 @@ footer a{color:#fff;text-decoration:underline}
         <h3>Método Códica</h3>
         <p>Un método de acompañamiento que trabaja sobre los patrones de pensamiento que generan sufrimiento emocional, en sesiones guiadas que integran terapia de sonido. Para quienes eligen mirar hacia adentro y transformar su manera de vivir.</p>
         <p>Disponible en el consultorio o por videollamada (Zoom o Meet), desde donde estés.</p>
-        <a class="btn-turno" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20consultar%20por%20M%C3%A9todo%20C%C3%B3dica" target="_blank" rel="noopener">Consultar por Método Códica</a>
+        <a class="btn-turno" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20consultar%20por%20M%C3%A9todo%20C%C3%B3dica" target="_blank" rel="noopener" onclick="fbq('track','Contact');">Consultar por Método Códica</a>
       </div>
     </div>
   </div>
@@ -214,7 +229,7 @@ footer a{color:#fff;text-decoration:underline}
       </article>
     </div>
     <div class="online-cta reveal">
-      <a href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20consultar%20por%20una%20sesi%C3%B3n%20online" class="btn-turno" target="_blank" rel="noopener">Consultar por sesión online</a>
+      <a href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20consultar%20por%20una%20sesi%C3%B3n%20online" class="btn-turno" target="_blank" rel="noopener" onclick="fbq('track','Contact');">Consultar por sesión online</a>
     </div>
   </div>
 </section>
@@ -287,7 +302,7 @@ footer a{color:#fff;text-decoration:underline}
   <div class="wrap">
     <h2 class="section-title reveal">Empezá tu proceso hoy</h2>
     <p class="reveal">Escribinos por WhatsApp y coordinamos tu turno, presencial en Santa Rosa u online desde donde estés. Estamos para acompañarte.</p>
-    <a class="btn-turno reveal" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    <a class="btn-turno reveal" href="https://wa.me/5492954712458?text=Hola%20BioBalance%2C%20quiero%20agendar%20una%20consulta" target="_blank" rel="noopener" onclick="fbq('track','Contact');">Escribir por WhatsApp</a>
     <div class="redes reveal">
       <a href="https://www.instagram.com/BioBalance.santarosa" target="_blank" rel="noopener">Instagram</a>
       <a href="mailto:biobalance.consultas@gmail.com">Email</a>
