@@ -129,6 +129,21 @@ header{position:sticky;top:0;z-index:50;background:var(--verde);box-shadow:0 2px
 footer{background:#0F2B0F;color:#BFD9BF;text-align:center;padding:2.2rem 1.4rem;font-size:.9rem}
 footer .aviso{max-width:680px;margin:0 auto .9rem;color:#9FC49F}
 footer a{color:#fff;text-decoration:underline}
+
+/* LOGO ANIMADO */
+.logo-anim{position:relative;width:min(200px,55vw);aspect-ratio:683/694;margin:0 auto 1.6rem;animation:logoEntrada 1.4s cubic-bezier(.2,.8,.2,1) both}
+.logo-anim::before{content:"";position:absolute;inset:4%;border-radius:50%;background:radial-gradient(circle,rgba(0,206,209,.45) 0%,rgba(0,206,209,0) 70%);animation:logoHalo 4.5s ease-in-out infinite;z-index:0}
+.logo-anim img{position:absolute;display:block;z-index:1}
+.logo-anim .logo-base{inset:0;width:100%;height:100%;filter:drop-shadow(0 14px 22px rgba(0,0,0,.3));animation:logoRespira 6s ease-in-out infinite}
+.logo-anim .mariposa-vuelo{left:35.1%;top:5.8%;width:35.1%;aspect-ratio:1;z-index:2;animation:mariposaFlota 6s ease-in-out infinite}
+.logo-anim .mariposa-vuelo img{position:static;width:100%;height:auto;transform-origin:72% 62%;animation:mariposaAletea 3.6s ease-in-out infinite}
+.logo-anim .mariposa-vuelo{position:absolute;perspective:420px}
+@keyframes logoEntrada{from{opacity:0;transform:scale(.82) rotate(-6deg)}to{opacity:1;transform:none}}
+@keyframes logoHalo{0%,100%{transform:scale(.95);opacity:.55}50%{transform:scale(1.12);opacity:1}}
+@keyframes logoRespira{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+@keyframes mariposaFlota{0%,100%{transform:translate(0,0) rotate(0)}30%{transform:translate(-3%,-5%) rotate(-3deg)}65%{transform:translate(2%,-2%) rotate(2deg)}}
+@keyframes mariposaAletea{0%,40%,100%{transform:rotateY(0)}48%{transform:rotateY(52deg)}56%{transform:rotateY(4deg)}64%{transform:rotateY(48deg)}72%{transform:rotateY(0)}}
+@media (prefers-reduced-motion:reduce){.logo-anim,.logo-anim *,.logo-anim::before{animation:none!important}}
 </style>
 </head>
 <body>
@@ -150,7 +165,10 @@ footer a{color:#fff;text-decoration:underline}
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <img class="logo" src="img/logo-biobalance.png" alt="Logo BioBalance con mariposa monarca">
+    <div class="logo-anim" role="img" aria-label="Logo BioBalance con mariposa monarca">
+      <img class="logo-base" src="img/logo-base.webp" alt="" width="683" height="694">
+      <div class="mariposa-vuelo"><img src="img/logo-mariposa.webp" alt="" width="240" height="240"></div>
+    </div>
     <span class="eyebrow">Presencial en Santa Rosa · Online a todo el país</span>
     <h1>BioBalance</h1>
     <p class="tagline">Tu cuerpo sabe cómo equilibrarse, nosotros te acompañamos</p>
